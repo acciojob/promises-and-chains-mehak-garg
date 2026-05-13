@@ -14,7 +14,8 @@ function func2(){
 		},4000);
 	})
 }
-async function func(){
+async function func(e){
+	e.preventDefault();
 if(age.value==""||user_name.value=="")
 {
 	alert("Please enter valid details.");
@@ -25,8 +26,8 @@ try{
 let output=await func2();
 alert(output);
 }
-catch(e){
-	alert(e);
+catch(error){
+	alert(error);
 }
 }
 
