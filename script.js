@@ -1,6 +1,6 @@
 //your JS code here. If required.
 let age=document.querySelector("#age");
-let user_name=document.querySelector("#user_name");
+let user_name=document.querySelector("#name");
 function func2(){
 	return new Promise((resolve,reject)=>{
 		setTimeout(()=>{
