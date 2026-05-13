@@ -1,13 +1,12 @@
 //your JS code here. If required.
 let age=document.querySelector("#age");
-let name=document.querySelector("#name");
+let user_name=document.querySelector("#user_name");
 function func2(){
 	return new Promise((resolve,reject)=>{
 		setTimeout(()=>{
 			if(age.value>18)
 			{
-				
-				resolve("Welcome, . You can vote.");
+			resolve("Welcome, . You can vote.");
 			}
 			else{
 				reject("Oh sorry . You aren't old enough.");
@@ -16,15 +15,32 @@ function func2(){
 	})
 }
 async function func(){
-if(age.value=""||name.value="")
+if(age.value==""||user_name.value=="")
 {
 	alert("Please enter valid details.");
+	return;
+	
 }
-	try{
-	let output=await func2();
+try{
+let output=await func2();
 alert(output);
 }
 catch(e){
 	alert(e);
 }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
