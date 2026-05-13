@@ -6,10 +6,10 @@ function func2(){
 		setTimeout(()=>{
 			if(age.value>18)
 			{
-			resolve("Welcome, . You can vote.");
+			resolve(`Welcome,${user_name.value} . You can vote.`);
 			}
 			else{
-				reject("Oh sorry . You aren't old enough.");
+				reject(`Oh sorry ${user_name.value}. You aren't old enough.`);
 			}
 		},4000);
 	})
