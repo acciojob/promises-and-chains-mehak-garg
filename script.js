@@ -6,7 +6,7 @@ function func2(){
 		setTimeout(()=>{
 			if(age.value>18)
 			{
-			resolve(`Welcome,${user_name.value} . You can vote.`);
+			resolve(`Welcome, ${user_name.value}. You can vote.`);
 			}
 			else{
 				reject(`Oh sorry ${user_name.value}. You aren't old enough.`);
@@ -18,9 +18,8 @@ async function func(e){
 	e.preventDefault();
 if(age.value==""||user_name.value=="")
 {
-	alert("Please enter valid details.");
+	alert("Please enter valid details");
 	return;
-	
 }
 try{
 let output=await func2();
